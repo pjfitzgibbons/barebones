@@ -1,3 +1,7 @@
+== Barebones Posts and Comments
+
+Build status : {<img src="https://circleci.com/gh/pjfitzgibbons/barebones/tree/master.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/pjfitzgibbons/barebones/tree/master]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
