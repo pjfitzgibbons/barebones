@@ -1,3 +1,6 @@
 
 james:
   email: 'test-user@test.com'
+
+mary:
+  email: 'mary@test.com'

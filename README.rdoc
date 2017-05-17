@@ -1,6 +1,30 @@
 == Barebones Posts and Comments
 
+Demo app is located at : https://dashboard.heroku.com/apps/gentle-peak-39427/activity
+Sign-ups are free for all!
+
 Build status : {<img src="https://circleci.com/gh/pjfitzgibbons/barebones/tree/master.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/pjfitzgibbons/barebones/tree/master]
+Dependencies (Gemnasium) : {<img src="https://gemnasium.com/badges/github.com/pjfitzgibbons/barebones.svg" alt="Dependency Status" />}[https://gemnasium.com/github.com/pjfitzgibbons/barebones]
+
+=== Example Googles
+These are some of the many lookups performed during build of this app
+
+- rails 4 render partial -- use quoted, not symobl
+- https://gist.github.com/PlanetRoast/464874d19d3f64765bdf - Bootstrap Navbar with Devise integration - Basic.erb
+- https://github.com/hisea/devise-bootstrap-views
+- https://github.com/RailsApps/rails_layout - generated layout:install bootstrap3
+- https://github.com/plataformatec/devise/wiki/How-To:-sign-in-and-out-a-user-in-Request-type-specs-(specs-tagged-with-type:-:request)
+- https://devcenter.heroku.com/articles/heroku-cli#download-and-install - install instructions
+- https://github.com/decioferreira/bootstrap-generators
+- https://github.com/twbs/bootstrap-sass
+- https://github.com/plataformatec/devise#getting-started
+
+=== App Resources
+
+- https://gemnasium.com/github.com/pjfitzgibbons/barebones
+- https://www.pivotaltracker.com/n/projects/2026585
+- https://circleci.com/gh/pjfitzgibbons/barebones
+- https://github.com/pjfitzgibbons/barebones
 
 == README
 
