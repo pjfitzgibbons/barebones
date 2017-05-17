@@ -27,7 +27,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise'
 
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -54,6 +53,9 @@ group :development do
   gem 'rubocop'
 
   gem 'bootstrap-generators', '~> 3.3.4'
+  gem 'devise-bootstrapped'
+
+  gem 'rails_layout'
 
 end
 
