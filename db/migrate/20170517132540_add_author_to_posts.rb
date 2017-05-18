@@ -7,8 +7,7 @@ class AddAuthorToPosts < ActiveRecord::Migration
     self.table_name = 'posts'
   end
 
-  def change
-
+  def up
     add_column :posts, :author_id, :integer
     first_user = MigrationUser.all.first
     MigrationPosts.update_all(author_id: first_user.id)
@@ -16,5 +15,11 @@ class AddAuthorToPosts < ActiveRecord::Migration
     change_column :posts, :author_id, :integer, null: false
 
     add_foreign_key :posts, :users, column: :author_id
+  end
+
+  def down
+    remove_foreign_key :posts, :users
+
+    remove_column :posts, :author_id
   end
 end

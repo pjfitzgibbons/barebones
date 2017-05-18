@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  fixtures :users, :posts, :comments
-
   let(:comment) { comments(:first_comment) }
   let(:post) { posts(:first_post) }
   let(:mary) { users(:mary) }

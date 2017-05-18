@@ -18,6 +18,9 @@ These are some of the many lookups performed during build of this app
 - https://github.com/decioferreira/bootstrap-generators
 - https://github.com/twbs/bootstrap-sass
 - https://github.com/plataformatec/devise#getting-started
+- https://relishapp.com/rspec/rspec-rails/docs/matchers/activerecord-relation-match-array
+- https://github.com/teamcapybara/capybara
+- http://stackoverflow.com/questions/27651141/testing-order-of-lines-of-text-on-web-page-rspec-capybara-in-rails
 
 === App Resources
 

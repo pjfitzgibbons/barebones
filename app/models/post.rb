@@ -6,4 +6,5 @@ class Post < ActiveRecord::Base
   validates :body, presence: true
   validates :author, presence: true
 
+  default_scope -> { order(publish_date: :desc) }
 end
