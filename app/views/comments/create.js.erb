@@ -1,0 +1,9 @@
+
+<% if @comment.valid? %>
+console.log("before: ", $("#comments article"))
+$("<%= escape_javascript(render 'comment', comment: @comment) %>").prependTo("#comments");
+//$("<h2>Hello</h2>").prependTo("#comments");
+console.log("after: ", $("#comments article"))
+<% end %>
+
+$("#new_comment").html("<%= escape_javascript(render "comments/new") %>")

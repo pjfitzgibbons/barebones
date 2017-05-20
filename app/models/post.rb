@@ -4,7 +4,13 @@ class Post < ActiveRecord::Base
 
   validates :title, presence: true
   validates :body, presence: true
-  validates :author, presence: true
+  validates :author_id, presence: true
 
   default_scope -> { order(publish_date: :desc) }
+
+
+  def byline
+    "By #{author.email} - #{publish_date}"
+  end
+
 end

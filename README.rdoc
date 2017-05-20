@@ -21,6 +21,8 @@ These are some of the many lookups performed during build of this app
 - https://relishapp.com/rspec/rspec-rails/docs/matchers/activerecord-relation-match-array
 - https://github.com/teamcapybara/capybara
 - http://stackoverflow.com/questions/27651141/testing-order-of-lines-of-text-on-web-page-rspec-capybara-in-rails
+- http://getbootstrap.com/examples/grid/
+- http://stackoverflow.com/questions/18963881/bootstrap-3-panel-header-with-buttons-wrong-position
 
 === App Resources
 

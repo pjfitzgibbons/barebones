@@ -27,13 +27,17 @@ RSpec.describe PostsController, type: :controller do
 
   fixtures :users
 
+  let(:james) { users(:james) }
+
   # This should return the minimal set of attributes required to create a valid
   # Post. As you add validations to Post, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
     {
       title: 'title',
-      body: 'body'
+      body: 'body',
+      author_id: james.id,
+      publish_date: DateTime.now
     }
   }
 
@@ -94,7 +98,7 @@ RSpec.describe PostsController, type: :controller do
 
       it "redirects to the created post" do
         post :create, {:post => valid_attributes}, valid_session
-        expect(response).to redirect_to(Post.last)
+        expect(response).to redirect_to(Post.first)
       end
     end
 
