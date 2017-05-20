@@ -1,29 +1,31 @@
-<div class="panel-heading">
-  <div class="clearfix">
+<div class="post panel panel-default">
+  <div class="panel-heading">
+    <div class="clearfix">
 
-    <% if local_assigns.fetch(:hide_link, false) %>
-        <h2>
-          <div class="btn-group pull-right">
-            <%= link_to posts_path, class: 'btn btn-default' do %>
-                <span class="glyphicon glyphicon-list-alt"></span>
-                Back
-            <% end %>
-            <%= link_to edit_post_path(@post), class: 'btn btn-primary' do %>
-                <span class="glyphicon glyphicon-pencil"></span>
-                Edit
-            <% end %>
-          </div>
-          <%= post.title %>
-        </h2>
-    <% else %>
-        <h2><%= link_to post.title, post %></h2>
-    <% end %>
-    <small style="padding-bottom: 6px"><%= post.byline %></small>
+      <% if local_assigns.fetch(:hide_link, false) %>
+          <h2>
+            <div class="btn-group pull-right">
+              <%= link_to posts_path, class: 'btn btn-default' do %>
+                  <span class="glyphicon glyphicon-list-alt"></span>
+                  Back
+              <% end %>
+              <%= link_to edit_post_path(@post), class: 'btn btn-primary' do %>
+                  <span class="glyphicon glyphicon-pencil"></span>
+                  Edit
+              <% end %>
+            </div>
+            <%= post.title %>
+          </h2>
+      <% else %>
+          <h2><%= link_to post.title, post %></h2>
+      <% end %>
+      <small style="padding-bottom: 6px"><%= post.byline %></small>
+    </div>
   </div>
+
+  <article class="clearfix panel-body" id="<%= post.id %>">
+
+    <div><%= post.body.gsub("\n", '<br/>').html_safe %></div>
+    <h5>Comments: <%= post.comments.count %></h5>
+  </article>
 </div>
-
-<article class="clearfix panel-body" id="<%= post.id %>">
-
-  <div><%= post.body.gsub("\n", '<br/>').html_safe %></div>
-  <h5>Comments: <%= post.comments.count %></h5>
-</article>

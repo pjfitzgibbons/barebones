@@ -2,12 +2,13 @@
 
 <%= render @post, hide_link: true %>
 
-<br/>
-<div  class="col-md-4" >
+
+<div  class="col-md-12" >
 
   <%= render 'comments/new' %>
 
 </div>
-<div id="comments" style="min-height: 400px">
+
+<div id="comments" class="clearfix col-md-12" style="min-height: 400px">
   <%= render 'comments/comments_panel', comments: @comments %>
 </div>

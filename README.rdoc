@@ -1,6 +1,8 @@
 == Barebones Posts and Comments
 
-Demo app is located at : https://dashboard.heroku.com/apps/gentle-peak-39427/activity
+Demo app is located at :
+https://gentle-peak-39427.herokuapp.com/
+
 Sign-ups are free for all!
 
 Build status : {<img src="https://circleci.com/gh/pjfitzgibbons/barebones/tree/master.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/pjfitzgibbons/barebones/tree/master]
