@@ -55,7 +55,7 @@ Rails.application.configure do
   config.log_tags = [ :uuid ]
 
   # Use a different logger for distributed setups.
-  config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new Rails.app_class)
+  config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new Rails.app_class.to_s)
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
