@@ -5,6 +5,10 @@ https://gentle-peak-39427.herokuapp.com/
 
 Sign-ups are free for all!
 
+Code is at:
+https://github.com/pjfitzgibbons/barebones
+
+
 Build status : {<img src="https://circleci.com/gh/pjfitzgibbons/barebones/tree/master.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/pjfitzgibbons/barebones/tree/master]
 Dependencies (Gemnasium) : {<img src="https://gemnasium.com/badges/github.com/pjfitzgibbons/barebones.svg" alt="Dependency Status" />}[https://gemnasium.com/github.com/pjfitzgibbons/barebones]
 
