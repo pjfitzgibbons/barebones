@@ -9,7 +9,8 @@ class AddAuthorToPosts < ActiveRecord::Migration
 
   def up
     add_column :posts, :author_id, :integer
-    first_user = MigrationUser.all.first
+
+    first_user = MigrationUser.first_or_create email: 'test_user@example.com'
     MigrationPosts.update_all(author_id: first_user.id)
 
     change_column :posts, :author_id, :integer, null: false
