@@ -8,6 +8,6 @@
   <%= render 'comments/new' %>
 
 </div>
-<div id="comments">
-  <%= render @post.comments %>
+<div id="comments" style="min-height: 400px">
+  <%= render 'comments/comments_panel', comments: @comments %>
 </div>

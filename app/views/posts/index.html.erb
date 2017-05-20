@@ -5,6 +5,7 @@
         New Post
     <% end %>
     <h1>Listing posts</h1>
+    <%= paginate @posts, :theme => 'twitter-bootstrap-3' %>
   </div>
 
   <div id="new_post" style="display: none;">

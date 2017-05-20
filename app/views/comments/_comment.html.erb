@@ -1,5 +1,4 @@
-<article class="comment">
-  <small><%= comment.byline %></small>
-    <div><%= comment.body.gsub("\n", '<br/>').html_safe %></div>
-  <hr/>
+<article class="panel panel-default">
+    <div class="panel-body"><%= comment.body.gsub("\n", '<br/>').html_safe %></div>
+  <div class="panel-footer"><%= comment.author.email %><br/><%= comment.created_at %></div>
 </article>

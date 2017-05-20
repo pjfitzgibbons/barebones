@@ -23,6 +23,7 @@ These are some of the many lookups performed during build of this app
 - http://stackoverflow.com/questions/27651141/testing-order-of-lines-of-text-on-web-page-rspec-capybara-in-rails
 - http://getbootstrap.com/examples/grid/
 - http://stackoverflow.com/questions/18963881/bootstrap-3-panel-header-with-buttons-wrong-position
+- https://www.w3schools.com/bootstrap/bootstrap_panels.asp
 
 === App Resources
 
